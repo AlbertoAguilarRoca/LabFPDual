@@ -9,6 +9,8 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 import exercicejbc.edu.fpdual.conector.Conector;
+import exercicejbc.edu.fpdual.dao.Actor;
+import exercicejbc.edu.fpdual.manager.ActorManager;
 import exercicejbc.edu.fpdual.manager.CategoryManager;
 
 public class Main {
@@ -21,8 +23,7 @@ public class Main {
 		try {
 			//Confirmamos que el conector funciona correctamente
 			//System.out.println(con.getCatalog());
-
-			//System.out.println(new CategoryManager().findCategoryByID(con, 18));
+			
 			
 			
 		} finally {

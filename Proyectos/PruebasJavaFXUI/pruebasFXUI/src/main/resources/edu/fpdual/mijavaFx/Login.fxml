@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox prefHeight="502.0" prefWidth="739.0" style="-fx-background-color: #312687;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="edu.fpdual.mijavaFx.LoginController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <left>
+            <AnchorPane prefHeight="489.0" prefWidth="221.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="502.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/login.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="502.0" prefWidth="456.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="userName" layoutX="84.0" layoutY="133.0" prefHeight="39.0" prefWidth="285.0" promptText="Nombre de Usuario" style="-fx-border-radius: 0%; -fx-border-color: White;">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TextField>
+                  <PasswordField fx:id="userPassword" layoutX="84.0" layoutY="186.0" prefHeight="39.0" prefWidth="285.0" promptText="Contraseña" style="-fx-border-color: white; -fx-border-radius: 0%;" />
+                  <Button fx:id="loginButton" layoutX="84.0" layoutY="257.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="45.0" prefWidth="285.0" style="-fx-border-radius: 0%; -fx-background-color: #009ddb;" text="Iniciar Sesion" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="ErrorMessage" layoutX="86.0" layoutY="354.0" textAlignment="CENTER" textFill="RED" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</VBox>
